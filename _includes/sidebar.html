@@ -1,0 +1,57 @@
+<!-- Use icons from fontawesome when you are adding new item in the contact list  -->             
+
+                 
+     <div class="sidebar-wrapper">
+            <div class="profile-container">
+                <img class="profile-img" src="{{site.baseurl}}/assets/images/{% if site.pic %}{{ site.pic }}{% else %}profile.png{% endif %}" alt="profile picture" />
+                <h1 class="name">{% if site.name %}{{site.name}}{% else %}Akshay Chaudhari{% endif %}</h1>
+                <h3 class="tagline">{% if site.tagline %}{{site.tagline}}{% else %}Computer Engineer{% endif %}</h3>
+            </div><!--//profile-container-->
+            
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                   
+                   {% if site.email %}
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.email}}">{{site.email}}</a></li>
+                    {% else %}
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:alan.doe@website.com">mr.akshay@outlook.com</a></li>
+                    {% endif %}
+                    
+                    {% if site.phone %}
+                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:{{site.phone}}">{{site.phone}}</a></li>
+                    {% else %}
+                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:917 562 4748">917 562 4748</a></li>
+                    {% endif %}
+                    
+                    {% if site.website %}
+                    <li class="website"><i class="fa fa-globe"></i><a href="http://{{site.website}}" target="_blank">{{site.website}}</a></li>
+                    {% else %}
+                    <li class="website"><i class="fa fa-globe"></i><a href="http://akshaychaudhari.pe.hu" target="_blank">(blog)akshaychaudhari.pe.hu</a></li>
+                    {% endif %}
+                    
+                    {% if site.linkedin %}
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/{{site.linkedin}}" target="_blank">linkedin.com/in/{{site.linkedin}}</a></li>
+                    {% else %}
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/AkshayChaudhari007" target="_blank">linkedin.com/in/AkshayChaudhari007</a></li>
+                    {% endif %}
+                    
+                    {% if site.github %}
+                    <li class="github"><i class="fa fa-github"></i><a href="http://github.com/{{site.github}}" target="_blank">github.com/{{site.github}}</a></li>
+                    {% else %}
+                    <li class="github"><i class="fa fa-github"></i><a href="http://github.com/akshaychaudhari" target="_blank">github.com/akshaychaudhari</a></li>
+                    {% endif %}
+                    
+                    {% if site.twitter %}
+                    <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/{{site.twitter}}" target="_blank">{{site.twitter}}</a></li>
+                    {% else %}
+                     <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/@Akshayrc" target="_blank">@Akshayrc</a></li>
+                    {% endif %}
+                    
+                </ul>
+            </div><!--//contact-container-->
+           {% include education.html %}
+           {% include language.html %}
+           {% include interests.html %}
+        
+            
+        </div><!--//sidebar-wrapper-->
