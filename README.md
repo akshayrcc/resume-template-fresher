@@ -1,3 +1,8 @@
-# MyCV
-This repo is for the responsive CV of mine.
-The content is personal info with scholastatic and other achievements.
+<p align="center">My Curriculum Vitae</p>
+<p align="center">
+  <img width="50" height="120" src="cv.jpg">
+</p>
+MyCV
+====
+It's the responsive and creative resume/cv fashioned report.
+The same is deployed and to access the same<a href="https://akshaychaudhari.github.io/MyCV/">Click here</a>.
