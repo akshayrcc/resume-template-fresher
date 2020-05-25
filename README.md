@@ -6,4 +6,4 @@
 MyCV
 ====
 It's the responsive and creative resume/cv fashioned report.</br>
-It's is deployed & to access the same <a href="https://akshaychaudhari.github.io/MyCV/">Click here</a>.
+It's is deployed & to access the same <a href="https://akshaychaudhari.github.io/my-resume-template-fresher/">Click here</a>.
